@@ -436,7 +436,13 @@ h1,h2,h3,h4,h5,h6,p{margin:0}
 
 /* Onde estamos (mapa do Google) */
 .c-map__viewport--br{aspect-ratio:1200/840}
-.c-map__pin--store i{width:1.8rem;height:1.8rem;background:var(--color-success)}
+.c-map__pin--store i{width:2.2rem;height:2.2rem;background:var(--color-gray-900);box-shadow:0 0 0 3px var(--color-white),0 .4rem 1rem rgba(0,0,0,.25)}
+.c-map__pin--store::after{content:"";position:absolute;bottom:-.6rem;left:50%;width:3.6rem;height:3.6rem;margin-left:-1.8rem;border-radius:50%;
+  background:rgba(60,60,60,.25);transform:scale(.3);animation:pin-pulse 2s ease-out infinite;z-index:-1}
+@keyframes pin-pulse{to{transform:scale(1.4);opacity:0}}
+.c-map__viewport--br{background:var(--color-primary)}
+.c-map__credit{position:absolute;left:1.2rem;bottom:.8rem;font-size:1rem;color:var(--color-gray);margin:0}
+.c-map__credit a{text-decoration:underline}
 @media (max-width:47.99em){ .c-map__pin--store b{display:block;font-size:1rem} }
 .c-map__icon{flex:none;width:2.8rem;height:2.8rem;margin-top:.2rem}
 .c-feature__icon{width:6.4rem;height:6.4rem;color:#5667b1}

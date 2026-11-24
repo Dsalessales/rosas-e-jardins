@@ -14,7 +14,7 @@ Site publicado: https://dsalessales.github.io/rosas-e-jardins/
 | `css/style.css` | Tokens (`:root`), componentes e responsivo (768px e 1025px) |
 | `js/products.js` | Produtos do slider "Our Bestsellers" (nome, preço, imagem, selo) |
 | `js/main.js` | Mega menu, busca, menu mobile, header que some ao rolar, slider, calendário, zoom do mapa (o "+" aproxima no pin da loja), favoritos |
-| `img/brasil-mapa.svg` | Mapa do Brasil gerado a partir do Natural Earth (domínio público), com o pin da loja |
+| `img/brasil-mapa.svg` | Mapa do Brasil com os estados (base: [svg-maps](https://github.com/VictorCazanave/svg-maps), de Victor Cazanave, licença CC BY 4.0), com São Paulo em destaque e o pin da loja |
 
 Uma imagem que ainda não existe aparece como um bloco rosa listrado com o nome do arquivo esperado. Basta salvar o arquivo com esse nome que ele passa a aparecer.
 
