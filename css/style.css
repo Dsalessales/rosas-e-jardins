@@ -389,7 +389,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0}
 .c-insta__grid .c-media:hover img{transform:scale(1.04)}
 .c-insta__box{background:var(--color-primary);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1.6rem;padding:4.8rem 2.4rem;order:-1}
 .c-insta__box .h3{max-width:16ch}
-.c-insta__dog{width:12rem;height:12rem;aspect-ratio:1}
+.c-insta__dog{width:12rem;height:12rem;aspect-ratio:1;color:var(--color-gray-900)}
 @media (min-width:64.0625em){ .c-insta{grid-template-columns:1fr 1fr} .c-insta__box{order:0;padding:4.8rem} .c-insta__dog{width:16rem;height:16rem} }
 
 /* S10 SEO */

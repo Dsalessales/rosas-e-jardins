@@ -18,21 +18,21 @@ Site publicado: https://dsalessales.github.io/rosas-e-jardins/
 
 Uma imagem que ainda não existe aparece como um bloco rosa listrado com o nome do arquivo esperado. Basta salvar o arquivo com esse nome que ele passa a aparecer.
 
-## Arquivos que ainda faltam
+## Fotos provisórias
 
-- `img/colecoes/birthday-flowers.jpg` (684×684): Flores de aniversário
-- `img/colecoes/cestas.jpg` (585×780): Cestas
-- `img/historia.jpg` (1392×588) e `img/historia-mobile.jpg` (735×980): banner "Flores para cada momento"
-- `img/icons/dog.svg`: ilustração do bloco do Instagram (opcional)
+Todas as seções já têm foto. Estas foram escolhidas entre as fotos disponíveis e devem ser trocadas por fotos da loja:
+
+- `img/colecoes/cestas.jpg` (585×780): ainda não é uma cesta
+- `img/colecoes/birthday-flowers.jpg` (684×684)
+- `img/historia.jpg` (1392×588) e `img/historia-mobile.jpg` (735×980)
 - `img/logo.svg` (opcional, sem ele aparece o logo em texto)
-- `img/produtos/`: `grand-felice.jpg`, `white-orchid.jpg`, `jade-plant.jpg`, `petite-amour.jpg`, `julia.jpg`
 
 ## Conteúdo provisório
 
 - Fotos de produtos, coleções e Instagram são de referência e devem ser trocadas por fotos da loja.
 - Nomes dos produtos e preços ("Sob consulta") ficam em `js/products.js`.
 - O bloco de depoimentos está escondido (`hidden` em `index.html`) até termos avaliações reais.
-- Faltam o telefone/WhatsApp e os links das redes sociais (hoje só o Instagram aparece, sem link).
+- Faltam os links das redes sociais (hoje só o Instagram aparece, sem link).
 
 ## Fontes
 
