@@ -18,7 +18,6 @@ Uma imagem que ainda não existe aparece como um bloco rosa listrado com o nome 
 
 ## Arquivos que ainda faltam
 
-- `img/hero.jpg` (1920×512)
 - `img/colecoes/birthday-flowers.jpg` (684×684)
 - `img/colecoes/small-attentions.jpg` (585×780)
 - `video/signature-bouquets.mp4` e o pôster `img/colecoes/signature-bouquets.jpg`
