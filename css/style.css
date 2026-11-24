@@ -123,10 +123,18 @@ h1,h2,h3,h4,h5,h6,p{margin:0}
 
 .c-nav__list{display:flex;align-items:center;gap:.4rem}
 .c-nav__link{display:inline-flex;align-items:center;gap:.4rem;height:var(--header-height);padding:0 1.2rem;
-  font-size:1.4rem;font-weight:500;line-height:1.6;text-transform:uppercase;letter-spacing:.04em;position:relative}
-.c-nav__link::after{content:"";position:absolute;left:1.2rem;right:1.2rem;bottom:1.8rem;height:1px;background:currentColor;
+  font-size:1.4rem;font-weight:500;line-height:1.6;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+/* O sublinhado fica preso ao texto (não à altura do header), então acompanha qualquer tradução */
+.c-nav__label{position:relative}
+.c-nav__label::after{content:"";position:absolute;left:0;right:0;bottom:-.3rem;height:1px;background:currentColor;
   transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.c-nav__link:hover::after,.has-mega.is-open .c-nav__link::after{transform:scaleX(1)}
+.c-nav__link:hover .c-nav__label::after,.has-mega.is-open .c-nav__label::after{transform:scaleX(1)}
+/* Telas médias: menos respiro e sem o texto "Call to order" para o menu caber em uma linha */
+@media (min-width:80.0625em) and (max-width:82em){
+  .c-header__inner{gap:1.2rem}
+  .c-nav__link{padding:0 .8rem;font-size:1.3rem}
+  .c-header__phone-label{display:none}
+}
 .has-mega.is-open .c-nav__link .icon{transform:rotate(180deg)}
 .c-nav__link .icon{transition:transform var(--transition-duration)}
 
@@ -208,12 +216,12 @@ h1,h2,h3,h4,h5,h6,p{margin:0}
 .c-field .icon{width:2rem;height:2rem;color:var(--color-gray)}
 .c-field input{flex:1;min-width:0;border:0;outline:none;background:transparent}
 .c-field input::placeholder{color:var(--color-gray)}
-.c-field__label{color:var(--color-gray)}
+.c-field__label{color:var(--color-gray);white-space:nowrap}
 .c-field__value{margin-left:auto;font-weight:600;text-decoration:underline;text-underline-offset:.3em}
 @media (min-width:64.0625em){
   .c-delivery__inner{flex-direction:row;align-items:center;justify-content:center;gap:3.2rem;min-height:11.1rem;padding-block:1.6rem}
   .c-delivery__form{flex-direction:row;align-items:center}
-  .c-field{width:24rem}
+  .c-field{width:26rem}
 }
 
 /* Calendário */
@@ -422,14 +430,26 @@ h1,h2,h3,h4,h5,h6,p{margin:0}
 }
 
 /* Faixa de protótipo */
-.c-proto{background:var(--color-gray-900);color:var(--color-white);text-align:center;font-size:1.2rem;font-weight:500;letter-spacing:.04em;padding:.6rem 1.6rem}
+.c-proto{background:var(--color-gray-900);color:var(--color-white);text-align:center;font-size:1.2rem;font-weight:500;letter-spacing:.04em;padding:.6rem 1.6rem;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.2rem 2.4rem}
+@media (max-width:47.99em){ .c-proto__hours{font-weight:400;opacity:.85} }
+
+/* Onde estamos (mapa do Google) */
+.c-map__viewport--br{aspect-ratio:1200/840}
+.c-map__pin--store i{width:1.8rem;height:1.8rem;background:var(--color-success)}
+@media (max-width:47.99em){ .c-map__pin--store b{display:block;font-size:1rem} }
+.c-map__icon{flex:none;width:2.8rem;height:2.8rem;margin-top:.2rem}
+.c-feature__icon{width:6.4rem;height:6.4rem;color:#5667b1}
+.c-footer__cols li:not(:has(a)){padding:.4rem 0;font-size:1.4rem}
+@media (min-width:64.0625em){ .c-footer__cols--4{grid-template-columns:repeat(4,1fr)} }
+.c-drawer__foot p{display:flex;align-items:center;gap:.8rem}
 
 /* "Need help?" */
 .c-help{position:fixed;right:1.6rem;bottom:1.6rem;z-index:40;width:18rem;box-shadow:0 .4rem 1.6rem rgba(0,0,0,.15)}
 .c-help .icon{width:2rem;height:2rem}
 
 /* ---------- Responsivo do header ---------- */
-@media (max-width:64em){
+@media (max-width:80em){
   .c-nav,.c-header__phone,.c-header__signin,.c-header__actions>.c-icon-btn[aria-label="Wishlist"]{display:none}
   .c-header__burger{display:inline-flex}
   .c-header__inner{display:grid;grid-template-columns:1fr auto 1fr;gap:1.2rem}

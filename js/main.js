@@ -14,7 +14,7 @@
           '<div class="c-media c-card__media" data-label="' + p.image.split('/').pop() + '">' +
             '<img src="' + p.image + '" alt="' + p.name + '" loading="lazy" width="330" height="440">' +
           '</div>' +
-          '<button type="button" class="c-card__fav js-fav" aria-label="Add ' + p.name + ' to wishlist" aria-pressed="false">' +
+          '<button type="button" class="c-card__fav js-fav" aria-label="Adicionar ' + p.name + ' aos favoritos" aria-pressed="false">' +
             '<svg class="icon"><use href="#i-heart"/></svg></button>' +
         '</div>' +
         '<div class="c-card__meta">' +
@@ -115,10 +115,10 @@
   var cal = $('.js-calendar'), calBtn = $('.js-date-toggle');
   var today = new Date(); today.setHours(0, 0, 0, 0);
   var view = new Date(today.getFullYear(), today.getMonth(), 1), selected = null;
-  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var months = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
   function renderCal() {
     $('.js-cal-month').textContent = months[view.getMonth()] + ' ' + view.getFullYear();
-    var g = $('.js-cal-grid'), html = ['Su','Mo','Tu','We','Th','Fr','Sa'].map(function (d) { return '<span>' + d + '</span>'; }).join('');
+    var g = $('.js-cal-grid'), html = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'].map(function (d) { return '<span>' + d + '</span>'; }).join('');
     for (var i = 0; i < view.getDay(); i++) html += '<i></i>';
     var days = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate();
     for (var d = 1; d <= days; d++) {
@@ -137,7 +137,7 @@
     $('.js-cal-grid').addEventListener('click', function (e) {
       var b = e.target.closest('button[data-d]'); if (!b) return;
       selected = new Date(view.getFullYear(), view.getMonth(), +b.dataset.d);
-      calBtn.textContent = selected.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      calBtn.textContent = selected.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short' });
       closeCal();
     });
     document.addEventListener('click', function (e) { if (!e.target.closest('.js-date')) closeCal(); });
@@ -153,8 +153,11 @@
       canvas.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + z + ')';
       $$('.c-map__pin', canvas).forEach(function (p) { p.style.scale = 1 / z; });
     }
+    var focus = $('.c-map__pin--store', canvas);
     function zoom(f) {
       var w = map.clientWidth / 2, h = map.clientHeight / 2, nz = Math.min(4, Math.max(1, z * f));
+      if (focus && f > 1) { var px = parseFloat(focus.style.left) / 100 * map.clientWidth, py = parseFloat(focus.style.top) / 100 * map.clientHeight;
+        tx = w - px * nz; ty = h - py * nz; z = nz; clamp(); return; }
       tx = w - (w - tx) * nz / z; ty = h - (h - ty) * nz / z; z = nz; clamp();
     }
     $('.js-zoom-in', map).addEventListener('click', function () { zoom(1.5); });

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rosas e Jardins | Flower Delivery</title>
-  <meta name="description" content="Rosas e Jardins: protótipo de loja de flores.">
+  <title>Rosas e Jardins | Floricultura em Araçoiaba da Serra</title>
+  <meta name="description" content="Rosas e Jardins: buquês, cestas e decorações em Araçoiaba da Serra (SP). Momentos especiais começam aqui.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="c-proto">Protótipo de design · loja fictícia, sem vendas reais</div>
+<div class="c-proto"><span>🎁 Momentos especiais começam aqui</span><span class="c-proto__hours">Seg. à Sex.: 9h às 18h · Sáb.: 9h às 13h</span></div>
 
 <!-- ================= ÍCONES (sprite) ================= -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -41,6 +41,8 @@
     <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3.5v11.2a3.8 3.8 0 1 1-3.3-3.8M14 3.5c.4 2.7 2.3 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4a20 20 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4v2.2H8.6v3h2.7V21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
     <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.6 18.6l-4.1.9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
     <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5h16v10.5H9l-5 4V5.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
@@ -48,77 +50,77 @@
 <!-- ================= HEADER ================= -->
 <header class="c-header js-header">
   <div class="container c-header__inner">
-    <button class="c-header__burger js-drawer-open" type="button" aria-label="Open menu">
+    <button class="c-header__burger js-drawer-open" type="button" aria-label="Abrir menu">
       <svg class="icon"><use href="#i-menu"/></svg><span>Menu</span>
     </button>
 
-    <a href="#" class="c-logo" aria-label="Rosas e Jardins, home">
+    <a href="#" class="c-logo" aria-label="Rosas e Jardins, página inicial">
       <img src="img/logo.svg" alt="Rosas e Jardins" class="c-logo__img js-logo-img">
       <span class="c-logo__text"><span class="c-logo__ode">ROSAS</span><span class="c-logo__rose">e Jardins</span></span>
     </a>
 
-    <nav class="c-nav" aria-label="Main">
+    <nav class="c-nav" aria-label="Principal">
       <ul class="c-nav__list">
         <li class="c-nav__item has-mega">
-          <button class="c-nav__link js-mega-toggle" type="button" aria-expanded="false">Fresh Flowers <svg class="icon icon--sm"><use href="#i-chevron-down"/></svg></button>
+          <button class="c-nav__link js-mega-toggle" type="button" aria-expanded="false"><span class="c-nav__label">Flores frescas</span> <svg class="icon icon--sm"><use href="#i-chevron-down"/></svg></button>
           <div class="c-mega">
             <div class="container c-mega__inner">
               <div class="c-mega__col">
-                <p class="c-mega__title">Collection</p>
+                <p class="c-mega__title">Coleção</p>
                 <ul>
-                  <li><a href="#">All Bouquets</a></li><li><a href="#">Fall Flowers</a></li><li><a href="#">Best Sellers</a></li>
-                  <li><a href="#">Roses</a></li><li><a href="#">Signature Bouquets</a></li><li><a href="#">Big Moments</a></li>
-                  <li><a href="#">Small Attentions</a></li><li><a href="#">Orchids</a></li><li><a href="#">Plants</a></li>
+                  <li><a href="#">Todos os buquês</a></li><li><a href="#">Flores da estação</a></li><li><a href="#">Mais vendidos</a></li>
+                  <li><a href="#">Rosas</a></li><li><a href="#">Buquês</a></li><li><a href="#">Cestas</a></li>
+                  <li><a href="#">Decorações</a></li><li><a href="#">Orquídeas</a></li><li><a href="#">Plantas</a></li>
                 </ul>
               </div>
               <div class="c-mega__col">
-                <p class="c-mega__title">Occasion</p>
+                <p class="c-mega__title">Ocasião</p>
                 <ul>
-                  <li><a href="#">Birthday</a></li><li><a href="#">Anniversary</a></li><li><a href="#">Congratulations</a></li>
-                  <li><a href="#">Thank You</a></li><li><a href="#">New Baby</a></li><li><a href="#">Get Well</a></li>
-                  <li><a href="#">Sympathy</a></li><li><a href="#">Weddings</a></li><li><a href="#">All Occasions</a></li>
+                  <li><a href="#">Aniversário</a></li><li><a href="#">Bodas</a></li><li><a href="#">Parabéns</a></li>
+                  <li><a href="#">Agradecimento</a></li><li><a href="#">Nascimento</a></li><li><a href="#">Melhoras</a></li>
+                  <li><a href="#">Condolências</a></li><li><a href="#">Casamentos</a></li><li><a href="#">Todas as ocasiões</a></li>
                 </ul>
               </div>
               <div class="c-mega__col">
-                <p class="c-mega__title">Color</p>
+                <p class="c-mega__title">Cor</p>
                 <ul>
-                  <li><a href="#">Red</a></li><li><a href="#">Pink</a></li><li><a href="#">White</a></li>
-                  <li><a href="#">Purple</a></li><li><a href="#">Orange</a></li>
+                  <li><a href="#">Vermelho</a></li><li><a href="#">Rosa</a></li><li><a href="#">Branco</a></li>
+                  <li><a href="#">Roxo</a></li><li><a href="#">Laranja</a></li>
                 </ul>
               </div>
               <div class="c-mega__highlights">
                 <a href="#" class="c-tile c-tile--mega">
                   <div class="c-media" data-label="birthday-flowers.jpg"><img src="img/colecoes/birthday-flowers.jpg" alt="" loading="lazy"></div>
-                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Birthday Flowers</span></span>
+                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Flores de aniversário</span></span>
                 </a>
                 <a href="#" class="c-tile c-tile--mega">
-                  <div class="c-media" data-label="signature-bouquets.mp4"><video src="video/signature-bouquets.mp4" muted loop playsinline autoplay preload="metadata"></video></div>
-                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Signature Bouquets</span></span>
+                  <div class="c-media" data-label="buques.jpg"><img src="img/colecoes/big-moments.jpg" alt="" loading="lazy"></div>
+                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Buquês</span></span>
                 </a>
                 <a href="#" class="c-tile c-tile--mega">
-                  <div class="c-media" data-label="small-attentions.jpg"><img src="img/colecoes/small-attentions.jpg" alt="" loading="lazy"></div>
-                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Small Attentions</span></span>
+                  <div class="c-media" data-label="cestas.jpg"><img src="img/colecoes/cestas.jpg" alt="" loading="lazy"></div>
+                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Cestas</span></span>
                 </a>
                 <a href="#" class="c-tile c-tile--mega">
-                  <div class="c-media" data-label="big-moments.jpg"><img src="img/colecoes/big-moments.jpg" alt="" loading="lazy"></div>
-                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Big Moments</span></span>
+                  <div class="c-media" data-label="decoracoes.jpg"><img src="img/colecoes/decoracoes.jpg" alt="" loading="lazy"></div>
+                  <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Decorações</span></span>
                 </a>
               </div>
             </div>
           </div>
         </li>
-        <li class="c-nav__item"><a class="c-nav__link" href="#">Preserved Roses</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="#">Centerpieces</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="#">Subscriptions</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="#">Our Story</a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="#"><span class="c-nav__label">Buquês</span></a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="#"><span class="c-nav__label">Cestas</span></a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="#"><span class="c-nav__label">Decorações</span></a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="#"><span class="c-nav__label">Nossa história</span></a></li>
       </ul>
     </nav>
 
     <div class="c-header__actions">
-      <button class="c-icon-btn js-search-toggle" type="button" aria-label="Search" aria-expanded="false"><svg class="icon"><use href="#i-search"/></svg></button>
-      <a class="c-header__phone" href="tel:+18005550100"><svg class="icon"><use href="#i-phone"/></svg><span><span class="c-header__phone-label">Call to order</span> +1 800 555 0100</span></a>
-      <a class="c-icon-btn" href="#" aria-label="Wishlist"><svg class="icon"><use href="#i-heart"/></svg></a>
-      <a class="c-header__signin" href="#"><svg class="icon"><use href="#i-user"/></svg><span>Sign in</span></a>
+      <button class="c-icon-btn js-search-toggle" type="button" aria-label="Buscar" aria-expanded="false"><svg class="icon"><use href="#i-search"/></svg></button>
+      <a class="c-header__phone" aria-label="Como chegar à loja em Araçoiaba da Serra" href="https://www.google.com/maps/search/?api=1&query=Av.%20%C3%82ngelo%20Pupim%2C%2041%2C%20Ara%C3%A7oiaba%20da%20Serra%20-%20SP%2C%2018190-000" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg><span class="c-header__phone-label">Araçoiaba da Serra</span></a>
+      <a class="c-icon-btn" href="#" aria-label="Favoritos"><svg class="icon"><use href="#i-heart"/></svg></a>
+      <a class="c-header__signin" href="#"><svg class="icon"><use href="#i-user"/></svg><span>Entrar</span></a>
     </div>
   </div>
 
@@ -127,15 +129,15 @@
     <div class="container">
       <form class="c-search__form" role="search" onsubmit="return false">
         <svg class="icon"><use href="#i-search"/></svg>
-        <input type="search" placeholder="Search" aria-label="Search" class="js-search-input">
-        <button type="button" class="c-icon-btn js-search-toggle" aria-label="Close search"><svg class="icon"><use href="#i-close"/></svg></button>
+        <input type="search" placeholder="Buscar" aria-label="Buscar" class="js-search-input">
+        <button type="button" class="c-icon-btn js-search-toggle" aria-label="Fechar busca"><svg class="icon"><use href="#i-close"/></svg></button>
       </form>
       <ul class="c-search__tags">
-        <li><a href="#">Birthday</a></li><li><a href="#">Roses</a></li><li><a href="#">Cheer Up</a></li><li><a href="#">Flower of the Month</a></li>
-        <li><a href="#">White</a></li><li><a href="#">Bright</a></li><li><a href="#">Mixed Arrangement</a></li><li><a href="#">Blush</a></li>
-        <li><a href="#">Single Variety</a></li><li><a href="#">Thank You</a></li><li><a href="#">Small Attentions</a></li><li><a href="#">Anniversary</a></li>
-        <li><a href="#">Red</a></li><li><a href="#">Tulips</a></li><li><a href="#">Plant</a></li><li><a href="#">Purple</a></li>
-        <li><a href="#">Pink</a></li><li><a href="#">Big Moments</a></li><li><a href="#">Congratulations</a></li><li><a href="#">Pastel</a></li>
+        <li><a href="#">Aniversário</a></li><li><a href="#">Rosas</a></li><li><a href="#">Ânimo</a></li><li><a href="#">Flor do mês</a></li>
+        <li><a href="#">Branco</a></li><li><a href="#">Vibrante</a></li><li><a href="#">Arranjo misto</a></li><li><a href="#">Rosé</a></li>
+        <li><a href="#">Uma só variedade</a></li><li><a href="#">Agradecimento</a></li><li><a href="#">Pequenos gestos</a></li><li><a href="#">Bodas</a></li>
+        <li><a href="#">Vermelho</a></li><li><a href="#">Tulipas</a></li><li><a href="#">Planta</a></li><li><a href="#">Roxo</a></li>
+        <li><a href="#">Rosa</a></li><li><a href="#">Grandes momentos</a></li><li><a href="#">Parabéns</a></li><li><a href="#">Pastel</a></li>
       </ul>
     </div>
   </div>
@@ -147,27 +149,28 @@
   <aside class="c-drawer__panel" aria-label="Menu">
     <div class="c-drawer__head">
       <span class="c-logo__text"><span class="c-logo__ode">ROSAS</span><span class="c-logo__rose">e Jardins</span></span>
-      <button class="c-icon-btn js-drawer-close" type="button" aria-label="Close menu"><svg class="icon"><use href="#i-close"/></svg></button>
+      <button class="c-icon-btn js-drawer-close" type="button" aria-label="Fechar menu"><svg class="icon"><use href="#i-close"/></svg></button>
     </div>
     <nav class="c-drawer__nav">
       <details>
-        <summary>Fresh Flowers <svg class="icon icon--sm"><use href="#i-chevron-down"/></svg></summary>
-        <p class="c-mega__title">Collection</p>
-        <ul><li><a href="#">All Bouquets</a></li><li><a href="#">Fall Flowers</a></li><li><a href="#">Best Sellers</a></li><li><a href="#">Roses</a></li><li><a href="#">Signature Bouquets</a></li><li><a href="#">Big Moments</a></li><li><a href="#">Small Attentions</a></li><li><a href="#">Orchids</a></li><li><a href="#">Plants</a></li></ul>
-        <p class="c-mega__title">Occasion</p>
-        <ul><li><a href="#">Birthday</a></li><li><a href="#">Anniversary</a></li><li><a href="#">Congratulations</a></li><li><a href="#">Thank You</a></li><li><a href="#">New Baby</a></li><li><a href="#">Get Well</a></li><li><a href="#">Sympathy</a></li><li><a href="#">Weddings</a></li><li><a href="#">All Occasions</a></li></ul>
-        <p class="c-mega__title">Color</p>
-        <ul><li><a href="#">Red</a></li><li><a href="#">Pink</a></li><li><a href="#">White</a></li><li><a href="#">Purple</a></li><li><a href="#">Orange</a></li></ul>
+        <summary>Flores frescas <svg class="icon icon--sm"><use href="#i-chevron-down"/></svg></summary>
+        <p class="c-mega__title">Coleção</p>
+        <ul><li><a href="#">Todos os buquês</a></li><li><a href="#">Flores da estação</a></li><li><a href="#">Mais vendidos</a></li><li><a href="#">Rosas</a></li><li><a href="#">Buquês</a></li><li><a href="#">Cestas</a></li><li><a href="#">Decorações</a></li><li><a href="#">Orquídeas</a></li><li><a href="#">Plantas</a></li></ul>
+        <p class="c-mega__title">Ocasião</p>
+        <ul><li><a href="#">Aniversário</a></li><li><a href="#">Bodas</a></li><li><a href="#">Parabéns</a></li><li><a href="#">Agradecimento</a></li><li><a href="#">Nascimento</a></li><li><a href="#">Melhoras</a></li><li><a href="#">Condolências</a></li><li><a href="#">Casamentos</a></li><li><a href="#">Todas as ocasiões</a></li></ul>
+        <p class="c-mega__title">Cor</p>
+        <ul><li><a href="#">Vermelho</a></li><li><a href="#">Rosa</a></li><li><a href="#">Branco</a></li><li><a href="#">Roxo</a></li><li><a href="#">Laranja</a></li></ul>
       </details>
-      <a href="#">Preserved Roses</a>
-      <a href="#">Centerpieces</a>
-      <a href="#">Subscriptions</a>
-      <a href="#">Our Story</a>
+      <a href="#">Buquês</a>
+      <a href="#">Cestas</a>
+      <a href="#">Decorações</a>
+      <a href="#">Nossa história</a>
     </nav>
     <div class="c-drawer__foot">
-      <a href="tel:+18005550100"><svg class="icon"><use href="#i-phone"/></svg> Call to order +1 800 555 0100</a>
-      <a href="#"><svg class="icon"><use href="#i-heart"/></svg> Wishlist</a>
-      <a href="#"><svg class="icon"><use href="#i-user"/></svg> Sign in</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Av.%20%C3%82ngelo%20Pupim%2C%2041%2C%20Ara%C3%A7oiaba%20da%20Serra%20-%20SP%2C%2018190-000" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Av. Ângelo Pupim, nº 41, sala 5, Araçoiaba da Serra</a>
+      <p><svg class="icon"><use href="#i-clock"/></svg> Seg. à Sex.: 9h às 18h · Sáb.: 9h às 13h</p>
+      <a href="#"><svg class="icon"><use href="#i-heart"/></svg> Favoritos</a>
+      <a href="#"><svg class="icon"><use href="#i-user"/></svg> Entrar</a>
     </div>
   </aside>
 </div>
@@ -181,10 +184,10 @@
     </div>
     <div class="container c-hero__container">
       <div class="c-hero__box">
-        <span class="h6">the art of saying it with flowers</span>
-        <h2 class="h2">warm tones, soft light</h2>
+        <span class="h6">Buquês · Cestas · Decorações</span>
+        <h1 class="h2">Momentos especiais começam aqui</h1>
         <svg class="c-hero__badge" aria-hidden="true"><use href="#i-rose-badge"/></svg>
-        <a class="c-button" href="#">Shop All Bouquets</a>
+        <a class="c-button" href="#">Ver todos os buquês</a>
       </div>
     </div>
   </section>
@@ -192,27 +195,27 @@
   <!-- ================= S1 ENTREGA ================= -->
   <section class="c-delivery">
     <div class="container c-delivery__inner">
-      <p class="c-delivery__text"><svg class="icon"><use href="#i-plane"/></svg> Enter your delivery zip code to view available products!</p>
+      <p class="c-delivery__text"><svg class="icon"><use href="#i-plane"/></svg> Informe o CEP de entrega para ver os produtos disponíveis!</p>
       <form class="c-delivery__form" onsubmit="return false">
         <label class="c-field">
           <svg class="icon"><use href="#i-pin"/></svg>
-          <input type="text" inputmode="numeric" maxlength="5" placeholder="Delivery zip code" aria-label="Delivery zip code">
+          <input type="text" inputmode="numeric" maxlength="5" placeholder="CEP de entrega" aria-label="CEP de entrega">
         </label>
         <div class="c-field c-field--date js-date">
           <svg class="icon"><use href="#i-calendar"/></svg>
-          <span class="c-field__label">Delivery date</span>
-          <button type="button" class="c-field__value js-date-toggle" aria-expanded="false">Select</button>
+          <span class="c-field__label">Data de entrega</span>
+          <button type="button" class="c-field__value js-date-toggle" aria-expanded="false">Escolher</button>
           <div class="c-calendar js-calendar" hidden>
-            <p class="c-calendar__title">Choose a delivery <em>Date</em></p>
+            <p class="c-calendar__title">Escolha a <em>data</em> de entrega</p>
             <div class="c-calendar__head">
-              <button type="button" class="c-icon-btn js-cal-prev" aria-label="Previous month"><svg class="icon icon--sm"><use href="#i-chevron-left"/></svg></button>
+              <button type="button" class="c-icon-btn js-cal-prev" aria-label="Mês anterior"><svg class="icon icon--sm"><use href="#i-chevron-left"/></svg></button>
               <span class="js-cal-month"></span>
-              <button type="button" class="c-icon-btn js-cal-next" aria-label="Next month"><svg class="icon icon--sm"><use href="#i-chevron-right"/></svg></button>
+              <button type="button" class="c-icon-btn js-cal-next" aria-label="Próximo mês"><svg class="icon icon--sm"><use href="#i-chevron-right"/></svg></button>
             </div>
             <div class="c-calendar__grid js-cal-grid"></div>
           </div>
         </div>
-        <button class="c-button" type="submit">View selection</button>
+        <button class="c-button" type="submit">Ver seleção</button>
       </form>
     </div>
   </section>
@@ -220,114 +223,110 @@
   <!-- ================= S2 BESTSELLERS ================= -->
   <section class="container c-section c-bestsellers">
     <div class="c-bestsellers__intro">
-      <h2 class="h2">Our Bestsellers</h2>
-      <p>Our most loved bouquets, chosen again and again. Hand-arranged with the season's finest flowers and delivered in our signature box.</p>
-      <p><a class="c-button" href="#">Shop Bestseller</a></p>
+      <h2 class="h2">Os mais vendidos</h2>
+      <p>Os buquês mais pedidos da Rosas e Jardins, montados à mão com flores frescas para cada ocasião.</p>
+      <p><a class="c-button" href="#">Ver os mais vendidos</a></p>
     </div>
     <div class="c-slider js-slider">
       <div class="c-slider__track js-slider-track js-products"></div>
-      <button class="c-slider__btn c-slider__btn--prev js-slider-prev" type="button" aria-label="Previous"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
-      <button class="c-slider__btn c-slider__btn--next js-slider-next" type="button" aria-label="Next"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+      <button class="c-slider__btn c-slider__btn--prev js-slider-prev" type="button" aria-label="Anterior"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+      <button class="c-slider__btn c-slider__btn--next js-slider-next" type="button" aria-label="Próximo"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
     </div>
   </section>
 
   <!-- ================= S3 COLEÇÕES ================= -->
   <section class="container c-section c-collections">
     <header class="c-section-title">
-      <span class="h3 c-section-title__sub">Discover our</span>
+      <span class="h3 c-section-title__sub">Descubra nossas</span>
       <div class="c-section-title__row">
         <svg class="icon icon--deco" aria-hidden="true"><use href="#i-flower"/></svg>
-        <h2 class="h2">collections</h2>
+        <h2 class="h2">coleções</h2>
         <svg class="icon icon--deco" aria-hidden="true"><use href="#i-flower"/></svg>
       </div>
     </header>
     <div class="c-scroll-row c-scroll-row--2">
       <a href="#" class="c-tile c-tile--square">
-        <div class="c-media" data-label="birthday-flowers.jpg (684×684)"><img src="img/colecoes/birthday-flowers.jpg" alt="Birthday Flowers" loading="lazy"></div>
-        <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Birthday Flowers</span></span>
+        <div class="c-media" data-label="birthday-flowers.jpg (684×684)"><img src="img/colecoes/birthday-flowers.jpg" alt="Flores de aniversário" loading="lazy"></div>
+        <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Flores de aniversário</span></span>
       </a>
       <a href="#" class="c-tile c-tile--square">
-        <div class="c-media" data-label="fall-flowers.jpg (684×684)"><img src="img/colecoes/fall-flowers.jpg" alt="Fall Flowers" loading="lazy"></div>
-        <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Fall Flowers</span></span>
+        <div class="c-media" data-label="fall-flowers.jpg (684×684)"><img src="img/colecoes/fall-flowers.jpg" alt="Flores da estação" loading="lazy"></div>
+        <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Flores da estação</span></span>
       </a>
     </div>
   </section>
 
-  <!-- ================= S4 3 BLOCOS VERTICAIS ================= -->
+  <!-- ================= S4 BUQUÊS · CESTAS · DECORAÇÕES ================= -->
   <section class="container c-section c-section--tight">
     <div class="c-scroll-row c-scroll-row--3">
       <a href="#" class="c-tile c-tile--portrait">
-        <div class="c-media" data-label="signature-bouquets.mp4"><video src="video/signature-bouquets.mp4" poster="img/colecoes/signature-bouquets.jpg" muted loop playsinline autoplay preload="metadata"></video></div>
-        <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Signature Bouquets</span></span>
+        <div class="c-media" data-label="buques.jpg (585×780)"><img src="img/colecoes/big-moments.jpg" alt="Buquês" loading="lazy"></div>
+        <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Buquês</span></span>
       </a>
       <a href="#" class="c-tile c-tile--portrait">
-        <div class="c-media" data-label="small-attentions.jpg (585×780)"><img src="img/colecoes/small-attentions.jpg" alt="Small Attentions" loading="lazy"></div>
-        <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Small Attentions</span></span>
+        <div class="c-media" data-label="cestas.jpg (585×780)"><img src="img/colecoes/cestas.jpg" alt="Cestas" loading="lazy"></div>
+        <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Cestas</span></span>
       </a>
       <a href="#" class="c-tile c-tile--portrait">
-        <div class="c-media" data-label="big-moments.jpg (585×780)"><img src="img/colecoes/big-moments.jpg" alt="Big Moments" loading="lazy"></div>
-        <span class="c-tile__caption"><span class="c-tile__eyebrow">Collections</span><span class="c-tile__title">Big Moments</span></span>
+        <div class="c-media" data-label="decoracoes.jpg (585×780)"><img src="img/colecoes/decoracoes.jpg" alt="Decorações" loading="lazy"></div>
+        <span class="c-tile__caption"><span class="c-tile__eyebrow">Coleções</span><span class="c-tile__title">Decorações</span></span>
       </a>
     </div>
   </section>
 
-  <!-- ================= S5 DIFERENCIAIS ================= -->
+  <!-- ================= S5 O QUE FAZEMOS ================= -->
   <section class="container c-section c-features">
     <div class="c-feature">
-      <img src="img/icons/truck.svg" alt="" width="64" height="64">
-      <h3 class="c-feature__title">Same Day Delivery</h3>
-      <p>In NYC, Chicago, LA, Washington DC, Austin and Miami. Next-day delivery everywhere else in the US.</p>
-    </div>
-    <div class="c-feature">
       <img src="img/icons/bouquet.svg" alt="" width="64" height="64">
-      <h3 class="c-feature__title">Arranged Locally</h3>
-      <p>Hand-crafted in our 6 local workshops across the US, with French savoir-faire.</p>
+      <h3 class="c-feature__title">Buquês</h3>
+      <p>Buquês montados à mão, com flores frescas, para cada ocasião.</p>
     </div>
     <div class="c-feature">
       <img src="img/icons/box.svg" alt="" width="64" height="64">
-      <h3 class="c-feature__title">Signature Gift Box</h3>
-      <p>Delivered in our iconic pink box, designed to keep your flowers safe.</p>
+      <h3 class="c-feature__title">Cestas</h3>
+      <p>Cestas de presente para surpreender quem você ama.</p>
     </div>
     <div class="c-feature">
-      <img src="img/icons/camera.svg" alt="" width="64" height="64">
-      <h3 class="c-feature__title">Receive a Photo</h3>
-      <p>We email you a photo of your bouquet before it leaves the workshop.</p>
+      <svg class="c-feature__icon" aria-hidden="true"><use href="#i-flower"/></svg>
+      <h3 class="c-feature__title">Decorações</h3>
+      <p>Flores e arranjos para deixar sua festa ou evento ainda mais especial.</p>
+    </div>
+    <div class="c-feature">
+      <svg class="c-feature__icon" aria-hidden="true"><use href="#i-clock"/></svg>
+      <h3 class="c-feature__title">Atendimento</h3>
+      <p>Seg. à Sex.: 9h às 18h<br>Sáb.: 9h às 13h</p>
     </div>
   </section>
 
-  <!-- ================= S6 MAPA ================= -->
-  <section class="container c-section c-map">
-    <div class="c-map__viewport js-map">
+  <!-- ================= S6 ONDE ESTAMOS ================= -->
+  <section class="container c-section c-map" id="onde-estamos">
+    <div class="c-map__viewport c-map__viewport--br js-map">
       <div class="c-map__canvas js-map-canvas">
-        <img src="img/us-map.svg" alt="Map of the United States with our same-day delivery cities" draggable="false">
-        <span class="c-map__pin" style="left:9.2%;top:58.7%"><i></i><b>Los Angeles</b></span>
-        <span class="c-map__pin" style="left:47.6%;top:80.6%"><i></i><b>Austin</b></span>
-        <span class="c-map__pin" style="left:65.3%;top:36.4%"><i></i><b>Chicago</b></span>
-        <span class="c-map__pin c-map__pin--right" style="left:88.9%;top:34.7%"><i></i><b>New York City</b></span>
-        <span class="c-map__pin" style="left:84.6%;top:43.1%"><i></i><b>Washington DC</b></span>
-        <span class="c-map__pin" style="left:84.1%;top:92.8%"><i></i><b>Miami</b></span>
+        <img src="img/brasil-mapa.svg" alt="Mapa do Brasil com a localização da Rosas e Jardins em Araçoiaba da Serra (SP)" draggable="false">
+        <span class="c-map__pin c-map__pin--store" style="left:61%;top:70.6%"><i></i><b>Rosas e Jardins · Araçoiaba da Serra</b></span>
       </div>
       <div class="c-map__zoom">
-        <button type="button" class="js-zoom-in" aria-label="Zoom in"><svg class="icon icon--sm"><use href="#i-plus"/></svg></button>
-        <button type="button" class="js-zoom-out" aria-label="Zoom out"><svg class="icon icon--sm"><use href="#i-minus"/></svg></button>
+        <button type="button" class="js-zoom-in" aria-label="Aproximar"><svg class="icon icon--sm"><use href="#i-plus"/></svg></button>
+        <button type="button" class="js-zoom-out" aria-label="Afastar"><svg class="icon icon--sm"><use href="#i-minus"/></svg></button>
       </div>
     </div>
     <div class="c-map__text">
-      <h2 class="h2">Delivery across the United States</h2>
+      <h2 class="h2">Onde estamos</h2>
       <div class="c-map__legend">
-        <span class="c-map__dot c-map__dot--dark"></span>
+        <svg class="c-map__icon" aria-hidden="true"><use href="#i-pin"/></svg>
         <div>
-          <h3 class="h4">Same day delivery</h3>
-          <p>New York City, Chicago, Los Angeles, Washington DC, Austin and Miami.</p>
+          <h3 class="h4">Endereço</h3>
+          <p>Av. Ângelo Pupim, nº 41, sala 5<br>Araçoiaba da Serra · SP · 18190-000</p>
         </div>
       </div>
       <div class="c-map__legend">
-        <span class="c-map__dot c-map__dot--light"></span>
+        <svg class="c-map__icon" aria-hidden="true"><use href="#i-clock"/></svg>
         <div>
-          <h3 class="h4">Next day delivery</h3>
-          <p>Everywhere else in the United States, except Alaska and Hawaii.</p>
+          <h3 class="h4">Horário de atendimento</h3>
+          <p>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
         </div>
       </div>
+      <p><a class="c-button" href="https://www.google.com/maps/search/?api=1&query=Av.%20%C3%82ngelo%20Pupim%2C%2041%2C%20Ara%C3%A7oiaba%20da%20Serra%20-%20SP%2C%2018190-000" target="_blank" rel="noopener">Como chegar</a></p>
     </div>
   </section>
 
@@ -340,38 +339,39 @@
       </picture>
       <div class="c-story__content">
         <p class="c-story__title">
-          <span class="c-story__l1">Flowers</span>
-          <span class="c-story__l2">inspired by</span>
-          <span class="c-story__l3">Paris</span>
+          <span class="c-story__l1">Flores</span>
+          <span class="c-story__l2">para cada</span>
+          <span class="c-story__l3">momento</span>
         </p>
-        <a class="c-button c-button--white" href="#">Read our story</a>
+        <a class="c-button c-button--white" href="#">Conheça nossa história</a>
       </div>
     </div>
   </section>
 
   <!-- ================= S8 DEPOIMENTOS ================= -->
-  <section class="container c-section c-reviews">
+  <!-- Escondido até termos avaliações reais de clientes (ex.: Google). Troque os textos e remova o "hidden". -->
+  <section class="container c-section c-reviews" hidden>
     <div class="c-scroll-row c-scroll-row--4">
       <article class="c-review">
-        <h3 class="c-review__title">“Lovely flowers.”</h3>
-        <p>The bouquet arrived on time and looked even better than in the pictures.</p>
+        <h3 class="c-review__title">“Flores lindas.”</h3>
+        <p>O buquê chegou no horário e estava ainda mais bonito que nas fotos.</p>
         <footer class="c-review__author"><img src="img/icons/avatar.svg" alt="" class="c-review__avatar"><span>Ana</span></footer>
       </article>
       <article class="c-review c-review--offset">
-        <h3 class="c-review__title">“Very happy with the result”</h3>
-        <p>Beautiful arrangement and a lovely box. My mother was delighted.</p>
+        <h3 class="c-review__title">“Muito feliz com o resultado”</h3>
+        <p>Arranjo lindo e uma caixa caprichada. Minha mãe amou.</p>
         <footer class="c-review__author"><img src="img/icons/avatar.svg" alt="" class="c-review__avatar"><span>Lucas</span></footer>
       </article>
       <article class="c-review c-review--offset-2">
-        <h3 class="c-review__title">“A very good beginning for a positive review.”</h3>
-        <p>Easy ordering, careful delivery and fresh flowers that lasted.</p>
+        <h3 class="c-review__title">“Um ótimo começo para uma avaliação positiva.”</h3>
+        <p>Pedido fácil, entrega cuidadosa e flores frescas que duraram.</p>
         <footer class="c-review__author"><img src="img/icons/avatar.svg" alt="" class="c-review__avatar"><span>Marina</span></footer>
       </article>
       <div class="c-review c-review--score">
         <svg class="c-review__star" aria-hidden="true"><use href="#i-star"/></svg>
-        <p class="c-review__score">4.5 out of 5</p>
-        <p class="c-review__count">Based on 4408 reviews</p>
-        <p class="c-trustpilot"><svg class="icon"><use href="#i-star"/></svg>Customer rating</p>
+        <p class="c-review__score">4,5 de 5</p>
+        <p class="c-review__count">Com base em 4.408 avaliações</p>
+        <p class="c-trustpilot"><svg class="icon"><use href="#i-star"/></svg>Avaliação dos clientes</p>
       </div>
     </div>
   </section>
@@ -386,8 +386,8 @@
     </div>
     <div class="c-insta__box">
       <img class="c-insta__dog" src="img/icons/dog.svg" alt="">
-      <p class="h6">Join 20k followers</p>
-      <h2 class="h3">Follow us on IG for more inspiration</h2>
+      <p class="h6">Rosas e Jardins no Instagram</p>
+      <h2 class="h3">Siga a gente no Instagram e se inspire</h2>
       <a class="c-button c-button--ghost" href="#">@rosasejardins</a>
     </div>
   </section>
@@ -395,27 +395,16 @@
   <!-- ================= S10 SEO / FAQ ================= -->
   <section class="container c-section c-section--tight">
     <details class="c-seo">
-      <summary><h2 class="h4">About flower delivery with Rosas e Jardins</h2><svg class="icon"><use href="#i-chevron-down"/></svg></summary>
+      <summary><h2 class="h4">Sobre a Rosas e Jardins</h2><svg class="icon"><use href="#i-chevron-down"/></svg></summary>
       <div class="c-seo__body">
-        <h3>Celebrate a special occasion or send a thoughtful message</h3>
-        <p>[Texto de apresentação: flores frescas entregues no mesmo dia nas principais cidades e no dia seguinte em todo o país.]</p>
-        <h3>Types of Flower Bouquets We Offer</h3>
-        <p>[Buquês assinatura, rosas, orquídeas, plantas, rosas preservadas e arranjos de mesa.]</p>
-        <h3>Why Order Flowers from Rosas e Jardins?</h3>
-        <p>[Ateliês locais, savoir-faire francês, caixa rosa característica e foto do buquê enviada por e-mail.]</p>
-        <h3>How Much Is Flower Delivery?</h3>
-        <p>[Valores e condições de frete.]</p>
-        <h3>Frequently Asked Questions About Rose Flower Delivery</h3>
-        <h4>What Payment Methods Do You Accept?</h4>
-        <p>[Formas de pagamento.]</p>
-        <h4>How Do You Package Bouquets?</h4>
-        <p>[Embalagem na caixa rosa, com água para manter as flores frescas.]</p>
-        <h4>How Do I Know When My Order Is on the Way?</h4>
-        <p>[Notificações por e-mail e rastreio.]</p>
-        <h4>How Long Will My Bouquet Last?</h4>
-        <p>[Durabilidade e cuidados.]</p>
-        <h3>Order Your Flowers From Rosas e Jardins</h3>
-        <p>[Chamada final para compra.]</p>
+        <h3>Floricultura em Araçoiaba da Serra</h3>
+        <p>A Rosas e Jardins prepara buquês, cestas e decorações para aniversários, datas especiais, agradecimentos e eventos. Momentos especiais começam aqui.</p>
+        <h3>O que você encontra aqui</h3>
+        <p>Buquês de flores frescas, cestas de presente e decoração com flores para festas e eventos.</p>
+        <h3>Onde estamos</h3>
+        <p>Av. Ângelo Pupim, nº 41, sala 5, Araçoiaba da Serra · SP · 18190-000.</p>
+        <h3>Horário de atendimento</h3>
+        <p>Segunda a sexta, das 9h às 18h. Sábado, das 9h às 13h.</p>
       </div>
     </details>
   </section>
@@ -426,51 +415,41 @@
 <footer class="c-footer">
   <div class="container">
     <div class="c-footer__top">
-      <a href="#" class="c-logo c-logo--footer" aria-label="Rosas e Jardins, home">
+      <a href="#" class="c-logo c-logo--footer" aria-label="Rosas e Jardins, página inicial">
         <img src="img/logo.svg" alt="Rosas e Jardins" class="c-logo__img js-logo-img">
         <span class="c-logo__text"><span class="c-logo__ode">ROSAS</span><span class="c-logo__rose">e Jardins</span></span>
       </a>
       <form class="c-newsletter" onsubmit="this.querySelector('input').value='';return false">
-        <p class="c-newsletter__title">Subscribe to our newsletter</p>
-        <p class="c-newsletter__sub">And get 10% off your first order!</p>
+        <p class="c-newsletter__title">Assine nossa newsletter</p>
+        <p class="c-newsletter__sub">Receba novidades e datas especiais em primeira mão.</p>
         <label class="c-newsletter__field">
-          <input type="email" placeholder="Email" aria-label="Email" required>
-          <button type="submit" aria-label="Subscribe"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+          <input type="email" placeholder="E-mail" aria-label="E-mail" required>
+          <button type="submit" aria-label="Assinar"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
         </label>
       </form>
       <ul class="c-social">
         <li><a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a></li>
-        <li><a href="#" aria-label="Pinterest"><svg class="icon"><use href="#i-pinterest"/></svg></a></li>
-        <li><a href="#" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a></li>
-        <li><a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a></li>
-        <li><a href="#" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a></li>
       </ul>
     </div>
 
-    <div class="c-footer__cols">
-      <div><p class="c-footer__title">About</p><ul>
-        <li><a href="#">Our Story</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Blog</a></li><li><a href="#">Your Account</a></li>
-        <li><a href="#">FAQ</a></li><li><a href="#">Where we deliver</a></li><li><a href="#">Articles</a></li><li><a href="#">Track your order</a></li></ul></div>
-      <div><p class="c-footer__title">Same-Day Cities</p><ul>
-        <li><a href="#">New York City</a></li><li><a href="#">Chicago</a></li><li><a href="#">Los Angeles</a></li>
-        <li><a href="#">Miami</a></li><li><a href="#">Austin</a></li><li><a href="#">Washington DC</a></li></ul></div>
-      <div><p class="c-footer__title">Shop</p><ul>
-        <li><a href="#">All Bouquets</a></li><li><a href="#">Signature Bouquets</a></li><li><a href="#">Preserved Roses</a></li><li><a href="#">Roses</a></li>
-        <li><a href="#">Centerpieces</a></li><li><a href="#">Flower Subscription</a></li><li><a href="#">Flowers and Gifts</a></li></ul></div>
-      <div><p class="c-footer__title">Next-Day Delivery Nationwide</p><ul>
-        <li><a href="#">Philadelphia</a></li><li><a href="#">Las Vegas</a></li><li><a href="#">Portland</a></li><li><a href="#">Denver</a></li><li><a href="#">Phoenix</a></li></ul></div>
-      <div><p class="c-footer__title" aria-hidden="true">&nbsp;</p><ul>
-        <li><a href="#">Atlanta</a></li><li><a href="#">San Antonio</a></li><li><a href="#">Houston</a></li><li><a href="#">San Diego</a></li>
-        <li><a href="#">Seattle</a></li><li><a href="#">Boston</a></li><li><a href="#">Greenwich</a></li></ul></div>
+    <div class="c-footer__cols c-footer__cols--4">
+      <div><p class="c-footer__title">Sobre</p><ul>
+        <li><a href="#">Nossa história</a></li><li><a href="#">Fale conosco</a></li><li><a href="#">Perguntas frequentes</a></li><li><a href="#onde-estamos">Onde estamos</a></li></ul></div>
+      <div><p class="c-footer__title">Loja</p><ul>
+        <li><a href="#">Buquês</a></li><li><a href="#">Cestas</a></li><li><a href="#">Decorações</a></li><li><a href="#">Flores e presentes</a></li></ul></div>
+      <div><p class="c-footer__title">Atendimento</p><ul>
+        <li>Seg. à Sex.: 9h às 18h</li><li>Sáb.: 9h às 13h</li></ul></div>
+      <div><p class="c-footer__title">Endereço</p><ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Av.%20%C3%82ngelo%20Pupim%2C%2041%2C%20Ara%C3%A7oiaba%20da%20Serra%20-%20SP%2C%2018190-000" target="_blank" rel="noopener">Av. Ângelo Pupim, nº 41, sala 5<br>Araçoiaba da Serra · SP · 18190-000</a></li></ul></div>
     </div>
 
     <ul class="c-footer__legal">
-      <li><a href="#">Sitemap</a></li><li><a href="#">Accessibility Statement</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Termos e condições</a></li><li><a href="#">Política de privacidade</a></li>
     </ul>
   </div>
 </footer>
 
-<a href="#" class="c-help c-button c-button--success"><svg class="icon"><use href="#i-chat"/></svg><span>Need help?</span></a>
+<a href="#" class="c-help c-button c-button--success"><svg class="icon"><use href="#i-chat"/></svg><span>Precisa de ajuda?</span></a>
 
 <script src="js/products.js"></script>
 <script src="js/main.js"></script>
